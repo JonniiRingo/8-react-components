@@ -2,7 +2,8 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client"; 
-import Heading from ".Heading"          // The extension .jsx is optional
+import Heading from "./Heading";       // The extension .jsx is optional
+import List from "./List";
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -13,12 +14,8 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <div>
-      <Heading />     //Custom heading component
-      <ul>
-        <li>One</li>
-        <li>Two</li>
-        <li>Three</li>
-      </ul>
+      <Heading />     
+      <List />       
     </div>
   </React.StrictMode>
 ); 
