@@ -1,19 +1,24 @@
-// If you're running this locally in VS Code use the commands:
-// npm install
-// to install the node modules and
-// npm run dev
-// to launch your react project in your browser
+// Reference Air BnB React Style Guide
 
 import React from "react";
 import ReactDOM from "react-dom/client"; 
+import Heading from ".Heading"          // The extension .jsx is optional
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
+
+
+
 root.render(
   <React.StrictMode>
     <div>
-      <h1>Hello World!</h1>
+      <Heading />     //Custom heading component
+      <ul>
+        <li>One</li>
+        <li>Two</li>
+        <li>Three</li>
+      </ul>
     </div>
   </React.StrictMode>
 ); 
